@@ -7,6 +7,7 @@ Team Members:
 4. Prakash.S.
 
 # Deployment Link : http://159.122.179.243:31298/
+#Demo Link : https://drive.google.com/file/d/1E1JwnWW6kr_vGRbg4TyiiJWerRiR1NvN/view?usp=sharing
 
 Faculty Mentor:
 Ms. Subashini.T.
