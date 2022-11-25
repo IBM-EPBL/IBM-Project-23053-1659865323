@@ -1,0 +1,39 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: experte
+  namespace: default
+  uid: 7f9f7d1a-6901-429b-8281-d64b844cdabf
+  resourceVersion: '1425'
+  generation: 1
+  creationTimestamp: '2022-11-25T03:39:17Z'
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+  managedFields:
+    - manager: dashboard
+      operation: Update
+      apiVersion: networking.k8s.io/v1
+      time: '2022-11-25T03:39:17Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubernetes.io/ingress.class: {}
+            f:nginx.ingress.kubernetes.io/ssl-redirect: {}
+        f:spec:
+          f:rules: {}
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: experte
+                port:
+                  number: 5000
+status:
+  loadBalancer: {}
