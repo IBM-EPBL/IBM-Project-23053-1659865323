@@ -1,0 +1,48 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: experte
+  namespace: default
+  uid: 1142314d-e986-4f85-a957-cf7635ebba87
+  resourceVersion: '1410'
+  creationTimestamp: '2022-11-25T03:38:16Z'
+  managedFields:
+    - manager: dashboard
+      operation: Update
+      apiVersion: v1
+      time: '2022-11-25T03:38:16Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          f:externalTrafficPolicy: {}
+          f:internalTrafficPolicy: {}
+          f:ports:
+            .: {}
+            k:{"port":5000,"protocol":"TCP"}:
+              .: {}
+              f:port: {}
+              f:protocol: {}
+              f:targetPort: {}
+          f:selector: {}
+          f:sessionAffinity: {}
+          f:type: {}
+spec:
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 31298
+  selector:
+    app: experte
+  clusterIP: 172.21.215.213
+  clusterIPs:
+    - 172.21.215.213
+  type: NodePort
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  internalTrafficPolicy: Cluster
+status:
+  loadBalancer: {}
