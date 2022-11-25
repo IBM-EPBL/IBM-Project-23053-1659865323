@@ -8,7 +8,7 @@ Team Members:
 
 # Deployment Link : http://159.122.179.243:31298/
 
-Faculty Evaluator:
+Faculty Mentor:
 Ms. Subashini.T.
 
 Instituition Name:
